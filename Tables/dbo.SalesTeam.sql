@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[SalesTeam]
+(
+[ID] [int] NOT NULL,
+[TeamName] [nvarchar] (50) COLLATE Latin1_General_CI_AS NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[SalesTeam] ADD CONSTRAINT [PK_SalesTeam] PRIMARY KEY CLUSTERED  ([ID]) WITH (FILLFACTOR=90) ON [PRIMARY]
+GO

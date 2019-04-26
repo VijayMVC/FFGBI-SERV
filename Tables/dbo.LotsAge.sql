@@ -1,0 +1,9 @@
+CREATE TABLE [dbo].[LotsAge]
+(
+[ID] [int] NOT NULL,
+[Code] [int] NOT NULL,
+[Name] [varchar] (10) COLLATE Latin1_General_CI_AS NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[LotsAge] ADD CONSTRAINT [PK_LotsAge] PRIMARY KEY CLUSTERED  ([ID]) WITH (FILLFACTOR=90) ON [PRIMARY]
+GO
